@@ -1,9 +1,9 @@
 "use client";
-import { useFormState } from "react-dom";
 import FormSubmit from "./FormSubmit";
+import { useActionState } from "react";
 
 const PostForm = ({ action }) => {
-  const [state, formAction] = useFormState(action, {});
+  const [state, formAction] = useActionState(action, {});
 
   return (
     <>
